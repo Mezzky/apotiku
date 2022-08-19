@@ -1,0 +1,56 @@
+/*========= FONT FAMILY =========*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/*========= CSS VARIABLE =========*/
+:root {
+    --main-font: "Poppins";
+    --bg-color: #1D1D20;
+    --main-color: #3175F9;
+    --second-color: #2B2D34;
+}
+
+/*========= CSS RESET =========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/*========= MAIN STYLE =========*/
+h1{
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    background-color: var(--main-color);
+    /* border-radius: 2px; */
+    padding: 5px 20px;
+}
+
+
+/*========= RESPONSIVE =========*/
+
+
+
+
+/*========= ANIMATION =========*/
