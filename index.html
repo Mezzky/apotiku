@@ -5,13 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apotiku</title>
+    <!-- Link CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- Link Fontawesome -->
+    <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>SELAMAT DATANG</h1>
+    <!-- Login Page -->
+    <section class="wrapper">
+        <section class="login-page">
+            <div class="input-container">
+                <h2>Halo, Selamat <br> Datang di <span class="active">Apotiku!</span> <span>👋</span></h2>
+                <h1>Sign In</h1>
+                <form action="" method="">
+                    <div class="input-box">
+                        <label for="username">Username</label>
+                        <div class="content">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="username">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <div class="content">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="password">
+                        </div>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+                <p>Anda belum daftar? <a href="#">Klik Disini</a></p>
+            </div>
 
-    <a href="dashboard.html">Login</a>
-
+            <div class="img-container"></div>
+        </section>
+    </section>
     <script src="JS/script.js"></script>
 </body>
 </html>
