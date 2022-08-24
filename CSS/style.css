@@ -104,7 +104,7 @@ header.active {
 .login-page {
   overflow: hidden;
   border-radius: 10px;
-  height: 500px;
+  height: 530px;
   width: 60%;
   background-color: var(--bg-color);
   display: grid;
