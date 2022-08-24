@@ -172,7 +172,7 @@ header.active {
   outline: none;
 }
 
-.login-page .input-container form input[type="submit"] {
+.login-page .input-container form button {
   cursor: pointer;
   background-color: var(--main-color);
   color: var(--light-text);
@@ -183,7 +183,7 @@ header.active {
   transition: 100ms ease;
 }
 
-.login-page .input-container form input[type="submit"]:hover {
+.login-page .input-container form button:hover {
   background-color: #5188f7;
 }
 
