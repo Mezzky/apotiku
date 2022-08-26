@@ -13,10 +13,12 @@
 <body>
     <!-- Login Page -->
     <section class="wrapper">
-        <section class="login-page">
+        <section class="register-page">
+            <div class="img-container"></div>
+
             <div class="input-container">
                 <h2>Halo, Selamat <br> Datang di <span class="active">Apotiku!</span> <span>👋</span></h2>
-                <h1>Sign In</h1>
+                <h1>Register</h1>
                 <form action="" method="">
                     <div class="input-box">
                         <label for="username">Username</label>
@@ -25,19 +27,26 @@
                             <input autocomplete="off" type="text" name="username">
                         </div>
                     </div>
+                    
                     <div class="input-box">
-                        <label for="password">Password</label>
+                        <div class="valdi"><label for="password">Password</label> <span>*Invalid Password</span></div>
                         <div class="content">
                             <i class="fa-solid fa-lock"></i>
                             <input autocomplete="off" type="password" name="password">
                         </div>
                     </div>
-                    <button type="submit">Login</button>
-                </form>
-                <p>Anda belum punya Akun? <a href="register.html">Daftar di sini</a></p>
-            </div>
 
-            <div class="img-container"></div>
+					<div class="input-box">
+                        <label for="confirmPass">Confirm Password</label>
+                        <div class="content">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <input autocomplete="off" type="password" name="confirmPass">
+                        </div>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Sudah punya Akun? <a href="index.html">Klik disini untuk Login</a></p>
+            </div>
         </section>
     </section>
     <script src="JS/script.js"></script>
