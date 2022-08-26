@@ -3,333 +3,367 @@
 
 /*========= CSS VARIABLE =========*/
 :root {
-  --main-font: "Poppins";
-  --main-color: #3175f9;
-  --second-color: #2b2d34;
-  --bg-color: #1d1d20;
-  --text-dimmed: #848484;
-  --light-text: #fff;
-  --danger: #FD4D62;
+    --main-font: "Poppins";
+    --main-color: #3175f9;
+    --second-color: #2b2d34;
+    --bg-color: #1d1d20;
+    --text-dimmed: #848484;
+    --light-text: #fff;
+    --danger: #FD4D62;
+    --box-color: #1D1F26;
 }
 
 /*========= CSS RESET =========*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--second-color);
-  overflow-x: hidden;
+    background-color: var(--second-color);
+    overflow-x: hidden;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .active {
-  color: var(--main-color);
-  font-size: 20px;
-  font-weight: 600;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /*========= MAIN STYLE =========*/
 
 /* <<<<< Header >>>>> */
 header {
-  padding: 20px;
-  position: fixed;
-  height: 100vh;
-  width: 60px;
-  left: 0;
-  background-color: var(--main-color);
-  transition: 300ms ease-in-out;
-  overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    width: 60px;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 300ms ease-in-out;
+    overflow: hidden;
 }
 
 header nav {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: column;
-  gap: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 30px;
 }
 
 header nav .logo a {
-  color: #fff;
+    color: #fff;
 }
 
 header nav li a {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 header nav li a i,
 span {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 header nav li a:hover span {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 header.active {
-  width: 230px;
+    width: 230px;
 }
 
 /* <<<<< Login Page >>>>> */
 .wrapper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .pop-msg{
+    background-color: var(--box-color);
+    border: 2px solid var(--text-dimmed);
+    padding: 30px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    /* display: flex; */
+    display: none;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    animation: slideDown 300ms ease-in forwards;
+}
+
+.wrapper .pop-msg p{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-text);
+}
+
+.wrapper .pop-msg a{
+    background-color: var(--main-color);
+    color: var(--light-text);
+    padding: 5px 100px;
+    border-radius: 5px;
+    transition: 100ms ease;
+}
+.wrapper .pop-msg a:hover{
+    background-color: #5188f7;
 }
 
 .login-page {
-  overflow: hidden;
-  border-radius: 10px;
-  height: 530px;
-  width: 60%;
-  background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 10px;
+    height: 530px;
+    width: 60%;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .login-page .input-container {
-  padding: 60px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .login-page .input-container h2 {
-  color: var(--light-text);
-  font-weight: 500;
-  font-size: 20px;
+    color: var(--light-text);
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .login-page .input-container h1 {
-  color: var(--light-text);
-  font-weight: 500;
-  font-size: 25px;
+    color: var(--light-text);
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .login-page .input-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .login-page .input-container form .input-box {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-page .input-container form .input-box label {
-  color: var(--text-dimmed);
-  font-size: 15px;
+    color: var(--text-dimmed);
+    font-size: 15px;
 }
 
 .login-page .input-container form .input-box .content {
-  display: grid;
-  grid-template-columns: 15% 85%;
-  border-radius: 8px;
-  border: 2px solid var(--text-dimmed);
-  padding: 5px 5px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    border-radius: 8px;
+    border: 2px solid var(--text-dimmed);
+    padding: 5px 5px;
 }
 
 .login-page .input-container form .input-box .content i {
-  color: var(--main-color);
-  padding: 5px 10px;
-  font-size: 12px;
+    color: var(--main-color);
+    padding: 5px 10px;
+    font-size: 12px;
 }
 
 .login-page .input-container form .input-box .content input {
-  color: var(--light-text);
-  background-color: transparent;
-  border: none;
-  width: 100%;
+    color: var(--light-text);
+    background-color: transparent;
+    border: none;
+    width: 100%;
 }
 
 .login-page .input-container form .input-box .content input:focus {
-  outline: none;
+    outline: none;
 }
 
 .login-page .input-container form button {
-  cursor: pointer;
-  background-color: var(--main-color);
-  color: var(--light-text);
-  font-weight: 500;
-  border: none;
-  padding: 10px 0;
-  border-radius: 5px;
-  transition: 100ms ease;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--light-text);
+    font-weight: 500;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: 100ms ease;
 }
 
 .login-page .input-container form button:hover {
-  background-color: #5188f7;
+    background-color: #5188f7;
 }
 
 .login-page .input-container p {
-  color: var(--light-text);
-  font-size: 14px;
+    color: var(--light-text);
+    font-size: 14px;
 }
 
 .login-page .input-container p a {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .login-page .input-container p a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .login-page .img-container {
-  background: url(../Assets/img/drug-pict.png) no-repeat center;
-  background-size: cover;
-  background-color: linear-gradient(134.03deg, rgba(0, 0, 0, 0) 20.34%, var(--bg-color) 81.64%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: url(../Assets/img/drug-pict.png) no-repeat center;
+    background-size: cover;
+    background-color: linear-gradient(134.03deg, rgba(0, 0, 0, 0) 20.34%, var(--bg-color) 81.64%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* <<<<< Register Page >>>>> */
 .wrapper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .register-page {
-  overflow: hidden;
-  border-radius: 10px;
-  height: 580px;
-  width: 60%;
-  background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 10px;
+    height: 580px;
+    width: 70%;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .register-page .input-container {
-  padding: 60px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .register-page .input-container h2 {
-  color: var(--light-text);
-  font-weight: 500;
-  font-size: 20px;
+    color: var(--light-text);
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .register-page .input-container h1 {
-  color: var(--light-text);
-  font-weight: 500;
-  font-size: 25px;
+    color: var(--light-text);
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .register-page .input-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .register-page .input-container form .input-box {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .register-page .input-container form .input-box label {
-  color: var(--text-dimmed);
-  font-size: 15px;
+    color: var(--text-dimmed);
+    font-size: 15px;
 }
 
 .register-page .input-container form .input-box .content {
-  display: grid;
-  grid-template-columns: 15% 85%;
-  border-radius: 8px;
-  border: 2px solid var(--text-dimmed);
-  padding: 5px 5px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    border-radius: 8px;
+    border: 2px solid var(--text-dimmed);
+    padding: 5px 5px;
 }
 
-.register-page .input-container form .input-box .valdi span{
+.register-page .input-container form .input-box .valdi span {
     font-size: 12px;
     color: var(--danger);
     font-weight: 300;
 }
 
 .register-page .input-container form .input-box .content i {
-  color: var(--main-color);
-  padding: 5px 10px;
-  font-size: 12px;
+    color: var(--main-color);
+    padding: 5px 10px;
+    font-size: 12px;
 }
 
 .register-page .input-container form .input-box .content input {
-  color: var(--light-text);
-  background-color: transparent;
-  border: none;
-  width: 100%;
+    color: var(--light-text);
+    background-color: transparent;
+    border: none;
+    width: 100%;
 }
 
 .register-page .input-container form .input-box .content input:focus {
-  outline: none;
+    outline: none;
 }
 
 .register-page .input-container form button {
-  cursor: pointer;
-  background-color: var(--main-color);
-  color: var(--light-text);
-  font-weight: 500;
-  border: none;
-  padding: 10px 0;
-  border-radius: 5px;
-  transition: 100ms ease;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--light-text);
+    font-weight: 500;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: 100ms ease;
 }
 
 .register-page .input-container form button:hover {
-  background-color: #5188f7;
+    background-color: #5188f7;
 }
 
 .register-page .input-container p {
-  color: var(--light-text);
-  font-size: 14px;
+    color: var(--light-text);
+    font-size: 14px;
 }
 
 .register-page .input-container p a {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .register-page .input-container p a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .register-page .img-container {
-  background: url(../Assets/img/doctor-pics.png) no-repeat center;
-  background-size: cover;
-  background-color: linear-gradient(134.03deg, rgba(0, 0, 0, 0) 20.34%, var(--bg-color) 81.64%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: url(../Assets/img/doctor-pics.png) no-repeat center;
+    background-size: cover;
+    background-color: linear-gradient(134.03deg, rgba(0, 0, 0, 0) 20.34%, var(--bg-color) 81.64%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* <<<<< Dasboard Page >>>>> */
@@ -338,40 +372,80 @@ header.active {
 /*========= RESPONSIVE =========*/
 /* Tablet */
 @media screen and (max-width: 820px) {
-  /* Login Page */
-  .login-page {
-    width: 90%;
-    grid-template-columns: 1fr;
-  }
+    /* Login Page */
+    .login-page {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
 
-  .login-page .img-container {
-    display: none;
-  }
+    .login-page .img-container {
+        display: none;
+    }
 
-  /* Register Page */
-  .register-page {
-    width: 90%;
-    grid-template-columns: 1fr;
-  }
+    /* Register Page */
+    .register-page {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
 
-  .register-page .img-container {
-    display: none;
-  }
+    .register-page .img-container {
+        display: none;
+    }
+}
+
+/* Mobile L */
+@media screen and (max-width: 480px) {
+    /* Pop Up Messagge */
+    .wrapper .pop-msg{
+        padding: 20px;
+    }
+
+    .wrapper .pop-msg p{
+        text-align: center;
+    }
 }
 
 /* Mobile S */
 @media screen and (max-width: 320px) {
-  /* Login Page */
-  .login-page {
-    width: 100%;
-    height: 100vh;
-  }
+    /* Pop Up Messagge */
+    .wrapper .pop-msg{
+        padding: 20px 5px;
+    }
 
-  /* Register Page */
-  .register-page {
-    width: 100%;
-    height: 100vh;
-  }
+    .wrapper .pop-msg p{
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .wrapper .pop-msg a{
+        padding: 5px 50px;
+    }
+
+    /* Login Page */
+    .login-page {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Register Page */
+    .register-page {
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 /*========= ANIMATION =========*/
+@keyframes slideDown {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(5px);
+        opacity: .5;
+    }
+    100%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
