@@ -41,7 +41,6 @@ li {
 
 .active {
     color: var(--main-color);
-    font-size: 20px;
     font-weight: 600;
 }
 
@@ -52,7 +51,7 @@ header {
     padding: 20px;
     position: fixed;
     height: 100vh;
-    width: 60px;
+    width: 100px;
     left: 0;
     background-color: var(--main-color);
     transition: 300ms ease-in-out;
@@ -68,29 +67,48 @@ header nav {
     gap: 30px;
 }
 
+header nav .logo{
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+header nav .logo:hover{
+    background-color: var(--bg-color);
+}
+
 header nav .logo a {
     color: #fff;
 }
 
+
 header nav li a {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 header nav li a i,
 span {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 
-header nav li a:hover span {
-    text-decoration: underline;
+header nav li a span{
+    width: max-content;
+    font-size: 18px;
 }
 
-header.active {
-    width: 230px;
+header nav li{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+header nav li:hover{
+    background-color: var(--bg-color);
+}
+
+header.slide {
+    width: 320px;
+    border-right: 3px solid var(--light-text);
 }
 
 /* <<<<< Login Page >>>>> */
@@ -156,6 +174,10 @@ header.active {
 .login-page .input-container h2 {
     color: var(--light-text);
     font-weight: 500;
+    font-size: 20px;
+}
+
+.login-page .input-container h2 span{
     font-size: 20px;
 }
 
@@ -276,6 +298,10 @@ header.active {
     font-size: 20px;
 }
 
+.register-page .input-container h2 span{
+    font-size: 20px;
+}
+
 .register-page .input-container h1 {
     color: var(--light-text);
     font-weight: 500;
@@ -367,7 +393,49 @@ header.active {
 }
 
 /* <<<<< Dasboard Page >>>>> */
+.dashboard-page{
+    padding-top: 30px;
+    padding-left: 150px;
+    width: 100%;
+}
 
+.dashboard-page .dash-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-page .dash-tittle .tittle{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-page .dash-tittle .tittle h1, span{
+    font-size: 25px;
+}
+.dashboard-page .dash-tittle .tittle h1, h2{
+    font-size: 25px;
+    color: var(--light-text);
+    font-weight: 500;
+}
+
+.dashboard-page .dash-tittle .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.dashboard-page .dash-tittle .profile img{
+    width: 50px;
+    height: 50px;
+}
+
+.dashboard-page .dash-tittle .profile a{
+    color: var(--light-text);
+    font-size: 20px;
+}
 
 /*========= RESPONSIVE =========*/
 /* Tablet */
