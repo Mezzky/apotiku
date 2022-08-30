@@ -100,7 +100,7 @@ header nav li a span{
 
 header nav li{
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 header nav li:hover{
     background-color: var(--bg-color);
