@@ -435,9 +435,33 @@ header.slide {
 }
 
 .dashboard-page .dash-tittle {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.dashboard-page .dash-tittle .profile-popup{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  right: 0;
+  bottom: -250px;
+  background-color: var(--box-color);
+  padding: 30px;
+  border: 1px solid var(--text-dimmed);
+  border-radius: 10px;
+  transition: 100ms ease-in-out;
+}
+
+.dashboard-page .dash-tittle .profile-popup a{
+  color: #fff;
+}
+
+.dashboard-page .dash-tittle .profile-popup span{
+  height: 1px;
+  background-color: var(--text-dimmed)
 }
 
 .dashboard-page .dash-tittle .tittle {
@@ -627,6 +651,9 @@ h2 {
   text-align: center;
   transition: 100ms ease-in;
 }
+.dashboard-page .dash-content .dash-data .data-karyawan .btn a:hover{
+  background-color: #5188f7;
+}
 
 .dashboard-page .dash-content .dash-data .data-karyawan .btn img {
   width: 250px;
@@ -687,6 +714,7 @@ h2 {
   border: 2px solid var(--text-dimmed);
   padding: 10px 20px;
   border-radius: 5px;
+  color: #fff;
 }
 
 .table-page .header .search-box button {
@@ -696,6 +724,10 @@ h2 {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+.table-page .header .search-box button:hover{
+  background-color: #5188f7;
 }
 
 .table-page .header a {
@@ -703,6 +735,10 @@ h2 {
   background-color: var(--second-color);
   padding: 10px 20px;
   border-radius: 10px;
+  transition: 100ms ease-in-out;
+}
+.table-page .header a:hover{
+  background-color: #373a44;
 }
 
 .table-page .table {
@@ -749,11 +785,21 @@ h2 {
   cursor: pointer;
 }
 
+.table-page .table .data .btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .table-page .table .data .btn .delete {
   background-color: var(--danger);
   color: var(--light-text);
   padding: 10px 15px;
   border-radius: 5px;
+  transition: 100ms ease-in-out;
+}
+.table-page .table .data .btn .delete:hover {
+  background-color: #ff7484;
 }
 
 .table-page .table .data .btn .update {
@@ -761,7 +807,10 @@ h2 {
   color: var(--light-text);
   padding: 10px 30px;
   border-radius: 5px;
-  margin-left: 10px;
+  transition: 100ms ease-in-out;
+}
+.table-page .table .data .btn .update:hover{
+  background-color: #5188f7;
 }
 
 /*========= RESPONSIVE =========*/
