@@ -442,6 +442,9 @@ header.slide {
 }
 
 .dashboard-page .dash-tittle .profile-popup{
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -452,11 +455,20 @@ header.slide {
   padding: 30px;
   border: 1px solid var(--text-dimmed);
   border-radius: 10px;
-  transition: 100ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+.dashboard-page .dash-tittle .profile-popup.show{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .dashboard-page .dash-tittle .profile-popup a{
   color: #fff;
+  transition: 200ms all;
+}
+.dashboard-page .dash-tittle .profile-popup a:hover{
+  transform: translateX(5px);
 }
 
 .dashboard-page .dash-tittle .profile-popup span{
@@ -497,6 +509,7 @@ h2 {
 .dashboard-page .dash-tittle .profile a {
   color: var(--light-text);
   font-size: 20px;
+  cursor: pointer;
 }
 
 .dashboard-page .dash-content {
@@ -669,9 +682,6 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  /* height: 100vh; */
-  /* background-color: rgba(43, 45, 52, 0.5); */
-  /* overflow: hidden; */
 }
 
 .table-page .shape {
@@ -694,6 +704,7 @@ h2 {
 }
 
 .table-page .header {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -730,15 +741,123 @@ h2 {
   background-color: #5188f7;
 }
 
-.table-page .header a {
+.table-page .header > button {
+  cursor: pointer;
   color: #fff;
+  border: none;
   background-color: var(--second-color);
   padding: 10px 20px;
   border-radius: 10px;
   transition: 100ms ease-in-out;
 }
-.table-page .header a:hover{
+.table-page .header > button:hover{
   background-color: #373a44;
+}
+
+.table-page .overlay{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 400;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  transition: 300ms ease;
+}
+.table-page .overlay.tambah{
+  visibility: visible;
+  opacity: 1;
+}
+
+.table-page .tambah-popup{
+  visibility: hidden;
+  opacity: 0;
+  max-width: 500px;
+  position: absolute;
+  z-index: 500;
+  top: 2px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  background: var(--box-color);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--text-dimmed);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 300ms ease;
+}
+.table-page .tambah-popup.tambah{
+  visibility: visible;
+  opacity: 1;
+}
+
+.table-page .tambah-popup h3{
+  font-weight: 500;
+  color: #fff;
+  border-bottom: 3px solid var(--text-dimmed);
+  padding-bottom: 10px;
+}
+
+.table-page .tambah-popup form{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.table-page .tambah-popup form .input-box{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.table-page .tambah-popup form .input-box label{
+  color: #fff;
+}
+
+.table-page .tambah-popup form .input-box select, input, textarea{
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.table-page .tambah-popup form .input-box select option{
+  background-color: var(--box-color);
+}
+
+.table-page .tambah-popup form .btn{
+  display: flex;
+  gap: 10px;
+}
+
+.table-page .tambah-popup form .btn button{
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: var(--danger);
+  transition: 100ms ease-in-out;
+}
+.table-page .tambah-popup form .btn button:hover{
+  background-color: #ff7484;
+}
+
+.table-page .tambah-popup form .btn button[type=submit]{
+  background-color: var(--main-color);
+  transition: 100ms ease-in-out;
+}
+.table-page .tambah-popup form .btn button[type=submit]:hover{
+  background-color: #5188f7;
 }
 
 .table-page .table {
@@ -748,8 +867,10 @@ h2 {
 }
 
 .table-page .table .data {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  display: grid;
+  grid-template-columns: .3fr .3fr 1fr 1fr 1fr 1fr 1fr;
+  /* justify-content: space-between; */
   align-items: center;
   background-color: var(--second-color);
   border: 1px solid var(--text-dimmed);
@@ -757,11 +878,40 @@ h2 {
   border-radius: 10px;
 }
 
+.table-page .table .data .detail-popup{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 260px;
+  top: 70px;
+  background-color: var(--box-color);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--text-dimmed);
+  transition: 300ms ease-in-out;
+}
+.table-page .table .data .detail-popup.pop{
+  visibility: visible;
+  opacity: 1;
+}
+
+.table-page .table .data .detail-popup .text{
+  color: #fff;
+}
+
+.table-page .table .data .detail-popup .text strong{
+  font-weight: 500;
+}
+
 .table-page .table .data h3 {
   color: var(--main-color);
 }
 
-.table-page .table .data span {
+.table-page .table .data > span {
   width: 2px;
   height: 30px;
   background-color: var(--text-dimmed);
