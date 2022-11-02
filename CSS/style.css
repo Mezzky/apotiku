@@ -280,7 +280,7 @@ header.slide {
 .register-page {
   overflow: hidden;
   border-radius: 10px;
-  height: 580px;
+  /* height: 580px; */
   width: 70%;
   background-color: var(--bg-color);
   display: grid;
@@ -333,6 +333,13 @@ header.slide {
   border-radius: 8px;
   border: 2px solid var(--text-dimmed);
   padding: 5px 5px;
+  align-items: center;
+}
+
+.register-page .input-container form .input-box .content select {
+  background-color: var(--box-color);
+  border: none;
+  color: var(--light-text);
 }
 
 .register-page .input-container form .input-box .valdi span {
@@ -415,7 +422,7 @@ header.slide {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background-color: rgba(253, 77, 98, .5);
+  background-color: rgba(253, 77, 98, 0.5);
   opacity: 50%;
   filter: blur(20px);
 }
@@ -429,7 +436,7 @@ header.slide {
 .dashboard-page .shape.two {
   right: -130px;
   bottom: -130px;
-  background-color: rgba(49, 117, 249, .5);
+  background-color: rgba(49, 117, 249, 0.5);
   width: 500px;
   height: 500px;
 }
@@ -441,7 +448,7 @@ header.slide {
   align-items: center;
 }
 
-.dashboard-page .dash-tittle .profile-popup{
+.dashboard-page .dash-tittle .profile-popup {
   visibility: hidden;
   opacity: 0;
   transform: translateY(-20px);
@@ -457,23 +464,23 @@ header.slide {
   border-radius: 10px;
   transition: 200ms ease-in-out;
 }
-.dashboard-page .dash-tittle .profile-popup.show{
+.dashboard-page .dash-tittle .profile-popup.show {
   visibility: visible;
   opacity: 1;
   transform: translateY(0px);
 }
 
-.dashboard-page .dash-tittle .profile-popup a{
+.dashboard-page .dash-tittle .profile-popup a {
   color: #fff;
   transition: 200ms all;
 }
-.dashboard-page .dash-tittle .profile-popup a:hover{
+.dashboard-page .dash-tittle .profile-popup a:hover {
   transform: translateX(5px);
 }
 
-.dashboard-page .dash-tittle .profile-popup span{
+.dashboard-page .dash-tittle .profile-popup span {
   height: 1px;
-  background-color: var(--text-dimmed)
+  background-color: var(--text-dimmed);
 }
 
 .dashboard-page .dash-tittle .tittle {
@@ -537,15 +544,17 @@ h2 {
 }
 
 .dashboard-page .dash-content .dash-data .all-data .total-data {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
 .dashboard-page .dash-content .dash-data .all-data .total-data .data {
   background-color: var(--second-color);
-  width: 260px;
+  /* width: 260px; */
   height: 140px;
   border: 2px solid var(--text-dimmed);
   border-radius: 12px;
@@ -601,8 +610,8 @@ h2 {
   color: var(--text-dimmed);
 }
 
-.dashboard-page .dash-content .dash-data .all-data .histori-data .data button, 
-.table-page .table .data .btnTrans{
+.dashboard-page .dash-content .dash-data .all-data .histori-data .data button,
+.table-page .table .data .btnTrans {
   cursor: pointer;
   background-color: var(--main-color);
   border: none;
@@ -612,8 +621,8 @@ h2 {
   transition: 100ms ease-in;
 }
 
-.dashboard-page .dash-content .dash-data .all-data .histori-data .data button:hover, 
-.table-page .table .data .btnTrans:hover{
+.dashboard-page .dash-content .dash-data .all-data .histori-data .data button:hover,
+.table-page .table .data .btnTrans:hover {
   background-color: #5188f7;
 }
 
@@ -664,7 +673,7 @@ h2 {
   text-align: center;
   transition: 100ms ease-in;
 }
-.dashboard-page .dash-content .dash-data .data-karyawan .btn a:hover{
+.dashboard-page .dash-content .dash-data .data-karyawan .btn a:hover {
   background-color: #5188f7;
 }
 
@@ -690,7 +699,7 @@ h2 {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background-color: rgba(49, 117, 249, .5);
+  background-color: rgba(49, 117, 249, 0.5);
   opacity: 50%;
   filter: blur(20px);
 }
@@ -698,7 +707,7 @@ h2 {
 .table-page .shape.two {
   right: -200px;
   bottom: -100px;
-  background-color: rgba(253, 77, 98, .5);
+  background-color: rgba(253, 77, 98, 0.5);
   width: 500px;
   height: 500px;
 }
@@ -737,7 +746,7 @@ h2 {
   cursor: pointer;
   transition: 100ms ease-in-out;
 }
-.table-page .header .search-box button:hover{
+.table-page .header .search-box button:hover {
   background-color: #5188f7;
 }
 
@@ -750,11 +759,11 @@ h2 {
   border-radius: 10px;
   transition: 100ms ease-in-out;
 }
-.table-page .header > button:hover{
+.table-page .header > button:hover {
   background-color: #373a44;
 }
 
-.table-page .overlay{
+.table-page .overlay {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -768,21 +777,21 @@ h2 {
   backdrop-filter: blur(10px);
   transition: 300ms ease;
 }
-.table-page .overlay.tambah{
+.table-page .overlay.tambah {
   visibility: visible;
   opacity: 1;
 }
 
-.table-page .tambah-popup{
+.table-page .tambah-popup {
   visibility: hidden;
   opacity: 0;
   max-width: 500px;
   position: absolute;
   z-index: 500;
   top: 2px;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
+  left: 0;
+  right: 0;
+  margin-left: auto;
   margin-right: auto;
   background: var(--box-color);
   padding: 25px;
@@ -793,35 +802,37 @@ h2 {
   gap: 10px;
   transition: 300ms ease;
 }
-.table-page .tambah-popup.tambah{
+.table-page .tambah-popup.tambah {
   visibility: visible;
   opacity: 1;
 }
 
-.table-page .tambah-popup h3{
+.table-page .tambah-popup h3 {
   font-weight: 500;
   color: #fff;
   border-bottom: 3px solid var(--text-dimmed);
   padding-bottom: 10px;
 }
 
-.table-page .tambah-popup form{
+.table-page .tambah-popup form {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.table-page .tambah-popup form .input-box{
+.table-page .tambah-popup form .input-box {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.table-page .tambah-popup form .input-box label{
+.table-page .tambah-popup form .input-box label {
   color: #fff;
 }
 
-.table-page .tambah-popup form .input-box select, input, textarea{
+.table-page .tambah-popup form .input-box select,
+input,
+textarea {
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
@@ -830,16 +841,16 @@ h2 {
   outline: none;
 }
 
-.table-page .tambah-popup form .input-box select option{
+.table-page .tambah-popup form .input-box select option {
   background-color: var(--box-color);
 }
 
-.table-page .tambah-popup form .btn{
+.table-page .tambah-popup form .btn {
   display: flex;
   gap: 10px;
 }
 
-.table-page .tambah-popup form .btn button{
+.table-page .tambah-popup form .btn button {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
@@ -848,15 +859,15 @@ h2 {
   background-color: var(--danger);
   transition: 100ms ease-in-out;
 }
-.table-page .tambah-popup form .btn button:hover{
+.table-page .tambah-popup form .btn button:hover {
   background-color: #ff7484;
 }
 
-.table-page .tambah-popup form .btn button[type=submit]{
+.table-page .tambah-popup form .btn button[type="submit"] {
   background-color: var(--main-color);
   transition: 100ms ease-in-out;
 }
-.table-page .tambah-popup form .btn button[type=submit]:hover{
+.table-page .tambah-popup form .btn button[type="submit"]:hover {
   background-color: #5188f7;
 }
 
@@ -866,107 +877,60 @@ h2 {
   gap: 20px;
 }
 
-.table-page .table .data {
-  position: relative;
-  display: grid;
-  grid-template-columns: .3fr .3fr 1fr 1fr 1fr 1fr 1fr;
-  /* justify-content: space-between; */
-  align-items: center;
-  background-color: var(--second-color);
-  border: 1px solid var(--text-dimmed);
-  padding: 20px 50px;
+.table-page .table table {
   border-radius: 10px;
+  border: 1px solid var(--text-dimmed);
+  overflow: hidden;
+  border-spacing: 0;
 }
 
-.table-page .table .data .detail-popup{
-  visibility: hidden;
-  opacity: 0;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: absolute;
-  right: 260px;
-  top: 70px;
+.table-page .table table thead,
+.table-page .table table tbody {
+  padding: 20px;
   background-color: var(--box-color);
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid var(--text-dimmed);
-  transition: 300ms ease-in-out;
-}
-.table-page .table .data .detail-popup.pop{
-  visibility: visible;
-  opacity: 1;
 }
 
-.table-page .table .data .detail-popup .text{
-  color: #fff;
+.table-page .table table tbody {
+  background-color: var(--second-color);
 }
 
-.table-page .table .data .detail-popup .text strong{
+.table-page .table table thead td,
+.table-page .table table tbody td {
+  color: var(--light-text);
+  padding: 20px;
+}
+
+.table-page .table table thead td {
   font-weight: 500;
 }
 
-.table-page .table .data h3 {
-  color: var(--main-color);
-}
-
-.table-page .table .data > span {
-  width: 2px;
-  height: 30px;
-  background-color: var(--text-dimmed);
-}
-
-.table-page .table .data p {
+.table-page .table table tbody td {
   color: var(--text-dimmed);
 }
 
-.table-page .table .data .data-title {
-  color: #fff;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.table-page .table .data button {
-  background: none;
-  border: none;
-  color: var(--text-dimmed);
+.table-page .table table tbody td:first-child {
+  color: var(--light-text);
   font-size: 18px;
+  font-weight: 500;
+}
+
+.table-page .table table tbody .btn button {
   cursor: pointer;
-}
-
-.table-page .table .data .btn {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.table-page .table .data .btn .delete {
+  padding: 5px 10px;
+  color: var(--light-text);
+  border: none;
   background-color: var(--danger);
-  color: var(--light-text);
-  padding: 10px 15px;
   border-radius: 5px;
   transition: 100ms ease-in-out;
+  font-weight: 600;
 }
-.table-page .table .data .btn .delete:hover {
-  background-color: #ff7484;
-}
-
-.table-page .table .data .btn .update {
-  background-color: var(--main-color);
-  color: var(--light-text);
-  padding: 10px 30px;
-  border-radius: 5px;
-  transition: 100ms ease-in-out;
-}
-.table-page .table .data .btn .update:hover{
-  background-color: #5188f7;
+.table-page .table table tbody .btn button:hover {
+  opacity: 0.9;
 }
 
 /*========= RESPONSIVE =========*/
 /* Tablet */
 @media screen and (max-width: 820px) {
-
   /* Login Page */
   .login-page {
     width: 90%;
@@ -990,7 +954,6 @@ h2 {
 
 /* Mobile L */
 @media screen and (max-width: 480px) {
-
   /* Pop Up Messagge */
   .wrapper .pop-msg {
     padding: 20px;
@@ -1003,7 +966,6 @@ h2 {
 
 /* Mobile S */
 @media screen and (max-width: 320px) {
-
   /* Pop Up Messagge */
   .wrapper .pop-msg {
     padding: 20px 5px;
