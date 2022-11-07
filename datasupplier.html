@@ -26,37 +26,88 @@
         </nav> 
     </header>
     
-    <!-- DATAOBAT PAGE -->
+    <!-- DATASUPPLIER PAGE -->
     <main class="table-page">
         <div class="shape one"></div>
         <div class="shape two"></div>
     
         <div class="header">
             <div class="search-box">
-                <input type="text" name="" id="" placeholder="Cari Supplier...">
+                <input type="text" name="" id="" placeholder="Cari Obat...">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <a href="">Tambah Data</a>
+            <button id="tambahBtn">Tambah Data</button>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div id="tambahPopup" class="tambah-popup">
+                <h3>Insert Obat</h3>
+                <form action="">
+                    <div class="input-box">
+                        <label for="idSupplier">ID Supplier</label>
+                        <select name="" id="idSupplier">
+                            <option value="xianjing">PT. Xianjing</option>
+                            <option value="shelby">PT. Shelby</option>
+                            <option value="sumaradu">PT. Sumaradu</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="namaObat">Nama Obat</label>
+                        <input type="text" name="" id="namaObat">
+                    </div>
+                    <div class="input-box">
+                        <label for="hargaJual">Harga Jual</label>
+                        <input type="text" name="" id="hargaJual">
+                    </div>
+                    <div class="input-box">
+                        <label for="hargaBeli">Harga Beli</label>
+                        <input type="text" name="" id="hargaBeli">
+                    </div>
+                    <div class="input-box">
+                        <label for="stokObat">Stok Obat</label>
+                        <input type="text" name="" id="stokObat">
+                    </div>
+                    <div class="input-box">
+                        <label for="ketObat">Keterangan Obat</label>
+                        <textarea name="" id="ketObat" rows=""></textarea>
+                    </div>
+                    <div class="btn">
+                        <button id="close" type="reset">Cancel</button>
+                        <button id="close" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="table">
-            <h2>Daftar Supplier</h2>
-            <div class="data">
-                <h3>01</h3>
-                <span></span>
-                <p class="data-title">PT. Xianjing Cox</p>
-                <p>023232323</p>
-                <p>Jl.Brutalan</p>
-                <button>Detail <i class="fa-solid fa-chevron-down"></i></button>
-                <div class="btn">
-                    <button id="delete" class="delete"><i class="fa-solid fa-trash"></i></button>
-                    <button id="update" class="update">Update</button>
-                </div>
-            </div>
+            <h2>Daftar Obat</h2>
+            <table>
+                <thead>
+                    <td>Nama Obat</td>
+                    <td>Harga Beli</td>
+                    <td>Harga Jual</td>
+                    <td>Keterangan</td>
+                    <td>Supplier</td>
+                    <td>Stok</td>
+                    <td>Aksi</td>
+                </thead>
+                <tbody>
+                    <td>Jamu</td>
+                    <td>Rp24000</td>
+                    <td>Rp14000</td>
+                    <td>Untuk Bundir</td>
+                    <td>PT. Suramadu</td>
+                    <td>100</td>
+                    <td class="btn">
+                        <button type="reset">Hapus</button>
+                        <button type="submit">Update</button>
+                    </td>
+                </tbody>
+            </table>
         </div>
     
     </main>
 
-    <script src="JS/script.js"></script>
+    <script src="JS/table.js"></script>
 </body>
 </html>
