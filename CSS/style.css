@@ -764,6 +764,9 @@ h2 {
 }
 
 .table-page .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -781,18 +784,22 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
+.table-page .overlay.update {
+  visibility: visible;
+  opacity: 1;
+}
 
 .table-page .tambah-popup {
   visibility: hidden;
   opacity: 0;
-  max-width: 500px;
+  width: 40%;
   position: absolute;
   z-index: 500;
-  top: 2px;
-  left: 0;
+  /* top: 2px; */
+  /* left: 0;
   right: 0;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   background: var(--box-color);
   padding: 25px;
   border-radius: 10px;
@@ -803,6 +810,10 @@ h2 {
   transition: 300ms ease;
 }
 .table-page .tambah-popup.tambah {
+  visibility: visible;
+  opacity: 1;
+}
+.table-page .tambah-popup.update {
   visibility: visible;
   opacity: 1;
 }
@@ -927,7 +938,7 @@ textarea {
 .table-page .table table tbody .btn button:hover {
   opacity: 0.9;
 }
-.table-page .table table tbody .btn button[type="submit"]{
+.table-page .table table tbody .btn #update{
   background-color: var(--main-color);
 }
 

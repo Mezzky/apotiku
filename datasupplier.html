@@ -32,46 +32,38 @@
         <div class="shape two"></div>
     
         <div class="header">
-            <div class="search-box">
-                <input type="text" name="" id="" placeholder="PT Samsudin 22...">
+            <form action="" class="search-box">
+                <input type="text" name="" id="" placeholder="Cari Supplier...">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            </form>
             <div class="btn">
                 <button id="printBtn"><i class="fa-solid fa-print"></i></button>
-                <button id="tambahBtn">Tambah Supplier</button>
+                <button id="tambahBtn">Tambah Data</button>
             </div>
         </div>
 
         <div id="overlay" class="overlay">
             <div id="tambahPopup" class="tambah-popup">
-                <h3>Insert Obat</h3>
+                <h3>Insert Supplier</h3>
                 <form action="">
                     <div class="input-box">
-                        <label for="idSupplier">ID Supplier</label>
-                        <select name="" id="idSupplier">
+                        <label for="namaSupplier">Nama Supplier</label>
+                        <select name="" id="namaSupplier">
                             <option value="xianjing">PT. Xianjing</option>
                             <option value="shelby">PT. Shelby</option>
                             <option value="sumaradu">PT. Sumaradu</option>
                         </select>
                     </div>
                     <div class="input-box">
-                        <label for="namaObat">Nama Obat</label>
-                        <input type="text" name="" id="namaObat">
+                        <label for="noTelp">No Telp</label>
+                        <input type="text" name="" id="noTelp">
                     </div>
                     <div class="input-box">
-                        <label for="hargaJual">Harga Jual</label>
+                        <label for="hargaJual">Alamat</label>
                         <input type="text" name="" id="hargaJual">
                     </div>
                     <div class="input-box">
-                        <label for="hargaBeli">Harga Beli</label>
-                        <input type="text" name="" id="hargaBeli">
-                    </div>
-                    <div class="input-box">
-                        <label for="stokObat">Stok Obat</label>
-                        <input type="text" name="" id="stokObat">
-                    </div>
-                    <div class="input-box">
-                        <label for="ketObat">Keterangan Obat</label>
+                        <label for="ketObat">Keterangan</label>
                         <textarea name="" id="ketObat" rows=""></textarea>
                     </div>
                     <div class="btn">
@@ -86,20 +78,20 @@
             <h2>Daftar Supplier</h2>
             <table>
                 <thead>
-                    <td>PT. Padepokan Jadab</td>
+                    <td>Nama Supplier</td>
                     <td>No Tlp.</td>
                     <td>Alamat</td>
-                    <td>Detail</td>
+                    <td>Keterangan</td>
                     <td>Aksi</td>
                 </thead>
                 <tbody>
                     <td>PT. Padepokan Jadab</td>
                     <td>0232323</td>
                     <td>JL. Samsudin</td>
-                    <td>Detail</td>
+                    <td>Perusahaan Ganja</td>
                     <td class="btn">
-                        <button type="reset">Hapus</button>
-                        <button type="submit">Update</button>
+                        <button id="del">Hapus</button>
+                        <button id="update">Update</button>
                     </td>
                 </tbody>
             </table>

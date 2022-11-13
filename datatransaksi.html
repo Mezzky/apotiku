@@ -32,47 +32,47 @@
         <div class="shape two"></div>
     
         <div class="header">
-            <div class="search-box">
-                <input type="text" name="" id="" placeholder="Obat Paracetamol...">
+            <form action="" class="search-box">
+                <input type="text" name="" id="" placeholder="Cari Transaksi...">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            </form>
             <div class="btn">
                 <button id="printBtn"><i class="fa-solid fa-print"></i></button>
-                <button id="tambahBtn">Tambah Transaksi</button>
+                <button id="tambahBtn">Tambah Data</button>
             </div>
         </div>
 
         <div id="overlay" class="overlay">
             <div id="tambahPopup" class="tambah-popup">
-                <h3>Insert Obat</h3>
+                <h3>Insert Transaksi</h3>
                 <form action="">
                     <div class="input-box">
-                        <label for="idSupplier">ID Supplier</label>
-                        <select name="" id="idSupplier">
-                            <option value="xianjing">PT. Xianjing</option>
-                            <option value="shelby">PT. Shelby</option>
-                            <option value="sumaradu">PT. Sumaradu</option>
-                        </select>
+                        <label for="namaPelanggan">Nama Pelanggan</label>
+                        <input type="text" name="" id="namaPelanggan">
                     </div>
                     <div class="input-box">
-                        <label for="namaObat">Nama Obat</label>
-                        <input type="text" name="" id="namaObat">
+                        <label for="namaKaryawan">Nama Karyawan</label>
+                        <input type="text" name="" id="namaKaryawan">
                     </div>
                     <div class="input-box">
-                        <label for="hargaJual">Harga Jual</label>
-                        <input type="text" name="" id="hargaJual">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="text" name="" id="tanggal">
                     </div>
                     <div class="input-box">
-                        <label for="hargaBeli">Harga Beli</label>
-                        <input type="text" name="" id="hargaBeli">
+                        <label for="kategori">Kategori</label>
+                        <input type="text" name="" id="kategori">
                     </div>
                     <div class="input-box">
-                        <label for="stokObat">Stok Obat</label>
-                        <input type="text" name="" id="stokObat">
+                        <label for="totalBayar">Total Bayar</label>
+                        <input type="text" name="" id="totalBayar">
                     </div>
                     <div class="input-box">
-                        <label for="ketObat">Keterangan Obat</label>
-                        <textarea name="" id="ketObat" rows=""></textarea>
+                        <label for="bayar">Bayar</label>
+                        <input type="text" name="" id="bayar">
+                    </div>
+                    <div class="input-box">
+                        <label for="kembalian">Kembalian</label>
+                        <input type="text" name="" id="kembalian">
                     </div>
                     <div class="btn">
                         <button id="close" type="reset">Cancel</button>
@@ -104,8 +104,8 @@
                     <td>5.000.000</td>
                     <td>2.000.000</td>
                     <td class="btn">
-                        <button type="reset">Hapus</button>
-                        <button type="submit">Update</button>
+                        <button id="del">Hapus</button>
+                        <button id="update">Update</button>
                     </td>
                 </tbody>
             </table>

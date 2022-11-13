@@ -55,3 +55,17 @@ tambahClose.addEventListener('click', () => {
     overlay.classList.remove('tambah')
     tambahPopup.classList.remove('tambah')
 })
+
+// Update Popup
+const updateBtn = document.getElementById('update')
+const updateClose = document.getElementById('close')
+
+updateBtn.addEventListener('click', () => {
+    overlay.classList.add('update')
+    tambahPopup.classList.add('update')
+})
+
+updateClose.addEventListener('click', () => {
+    overlay.classList.remove('update')
+    tambahPopup.classList.remove('update')
+})
