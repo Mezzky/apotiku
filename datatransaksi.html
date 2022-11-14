@@ -44,7 +44,7 @@
         </div>
 
         <div id="overlay" class="overlay">
-            <div id="tambahPopup" class="tambah-popup">
+            <div id="tambahPopup" class="form-popup">
                 <h3>Insert Transaksi</h3>
                 <form action="">
                     <div class="input-box">
@@ -77,6 +77,40 @@
                     </div>
                 </form>
             </div>
+            
+            <div id="updatePopup" class="form-popup">
+                <h3>Update Transaksi</h3>
+                <form action="">
+                    <div class="input-box">
+                        <label for="idTransaksi">ID Transaksi</label>
+                        <select name="" id="idTransaksi">
+                            <option value="xianjing">PT. Xianjing</option>
+                            <option value="shelby">PT. Shelby</option>
+                            <option value="sumaradu">PT. Sumaradu</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="text" name="" id="tanggal">
+                    </div>
+                    <div class="input-box">
+                        <label for="idPelanggan">ID Pelanggan</label>
+                        <select name="" id="idPelanggan">
+                            <option value="xianjing">Joko</option>
+                            <option value="shelby">Bejo</option>
+                            <option value="sumaradu">Gordo</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="kategori">Kategori</label>
+                        <input type="text" name="" id="kategori">
+                    </div>
+                    <div class="btn">
+                        <button id="closeUpdate" type="reset">Cancel</button>
+                        <button id="closeUpdate" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="table">
@@ -102,7 +136,7 @@
                     <td>2.000.000</td>
                     <td class="btn">
                         <button id="del">Hapus</button>
-                        <button id="update">Update</button>
+                        <button class="update">Update</button>
                     </td>
                 </tbody>
             </table>

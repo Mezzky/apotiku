@@ -44,7 +44,7 @@
         </div>
 
         <div id="overlay" class="overlay">
-            <div id="tambahPopup" class="tambah-popup">
+            <div id="tambahPopup" class="form-popup">
                 <h3>Insert Supplier</h3>
                 <form action="">
                     <div class="input-box">
@@ -73,6 +73,36 @@
                     </div>
                 </form>
             </div>
+            
+            <div id="updatePopup" class="form-popup">
+                <h3>Update Supplier</h3>
+                <form action="">
+                    <div class="input-box">
+                        <label for="namaSupplier">Nama Supplier</label>
+                        <select name="" id="namaSupplier">
+                            <option value="xianjing">PT. Xianjing</option>
+                            <option value="shelby">PT. Shelby</option>
+                            <option value="sumaradu">PT. Sumaradu</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="noTelp">No Telp</label>
+                        <input type="text" name="" id="noTelp">
+                    </div>
+                    <div class="input-box">
+                        <label for="hargaJual">Alamat</label>
+                        <input type="text" name="" id="hargaJual">
+                    </div>
+                    <div class="input-box">
+                        <label for="ketObat">Keterangan</label>
+                        <textarea name="" id="ketObat" rows=""></textarea>
+                    </div>
+                    <div class="btn">
+                        <button id="closeUpdate" type="reset">Cancel</button>
+                        <button id="closeUpdate" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="table">
@@ -92,7 +122,7 @@
                     <td>Perusahaan Ganja</td>
                     <td class="btn">
                         <button id="del">Hapus</button>
-                        <button id="update">Update</button>
+                        <button class="update">Update</button>
                     </td>
                 </tbody>
             </table>

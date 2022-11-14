@@ -44,7 +44,7 @@
         </div>
 
         <div id="overlay" class="overlay">
-            <div id="tambahPopup" class="tambah-popup"> 
+            <div id="tambahPopup" class="form-popup"> 
                 <h3>Insert Obat</h3>
                 <form action="">
                     <div class="input-box">
@@ -81,6 +81,44 @@
                     </div>
                 </form>
             </div>
+
+            <div id="updatePopup" class="form-popup"> 
+                <h3>Update Obat</h3>
+                <form action="">
+                    <div class="input-box">
+                        <label for="idSupplier">ID Supplier</label>
+                        <select name="" id="idSupplier">
+                            <option value="xianjing">PT. Xianjing</option>
+                            <option value="shelby">PT. Shelby</option>
+                            <option value="sumaradu">PT. Sumaradu</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="namaObat">Nama Obat</label>
+                        <input type="text" name="" id="namaObat">
+                    </div>
+                    <div class="input-box">
+                        <label for="hargaJual">Harga Jual</label>
+                        <input type="text" name="" id="hargaJual">
+                    </div>
+                    <div class="input-box">
+                        <label for="hargaBeli">Harga Beli</label>
+                        <input type="text" name="" id="hargaBeli">
+                    </div>
+                    <div class="input-box">
+                        <label for="stokObat">Stok Obat</label>
+                        <input type="text" name="" id="stokObat">
+                    </div>
+                    <div class="input-box">
+                        <label for="ketObat">Keterangan Obat</label>
+                        <textarea name="" id="ketObat" rows=""></textarea>
+                    </div>
+                    <div class="btn">
+                        <button id="closeUpdate" type="reset">Cancel</button>
+                        <button id="closeUpdate" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="table">
@@ -104,12 +142,23 @@
                     <td>100</td>
                     <td class="btn">
                         <button id="del">Hapus</button>
-                        <button id="update">Update</button>
+                        <button class="update">Update</button>
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>Jamu</td>
+                    <td>Rp24000</td>
+                    <td>Rp14000</td>
+                    <td>Untuk Bundir</td>
+                    <td>PT. Suramadu</td>
+                    <td>100</td>
+                    <td class="btn">
+                        <button id="del">Hapus</button>
+                        <button class="update">Update</button>
                     </td>
                 </tbody>
             </table>
         </div>
-    
     </main>
 
     <script src="JS/table.js"></script>

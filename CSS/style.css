@@ -789,17 +789,12 @@ h2 {
   opacity: 1;
 }
 
-.table-page .tambah-popup {
+.table-page .form-popup {
   visibility: hidden;
   opacity: 0;
   width: 40%;
   position: absolute;
   z-index: 500;
-  /* top: 2px; */
-  /* left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto; */
   background: var(--box-color);
   padding: 25px;
   border-radius: 10px;
@@ -809,39 +804,39 @@ h2 {
   gap: 10px;
   transition: 300ms ease;
 }
-.table-page .tambah-popup.tambah {
+.table-page .form-popup.tambah {
   visibility: visible;
   opacity: 1;
 }
-.table-page .tambah-popup.update {
+.table-page .form-popup.update {
   visibility: visible;
   opacity: 1;
 }
 
-.table-page .tambah-popup h3 {
+.table-page .form-popup h3 {
   font-weight: 500;
   color: #fff;
   border-bottom: 3px solid var(--text-dimmed);
   padding-bottom: 10px;
 }
 
-.table-page .tambah-popup form {
+.table-page .form-popup form {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.table-page .tambah-popup form .input-box {
+.table-page .form-popup form .input-box {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.table-page .tambah-popup form .input-box label {
+.table-page .form-popup form .input-box label {
   color: #fff;
 }
 
-.table-page .tambah-popup form .input-box select,
+.table-page .form-popup form .input-box select,
 input,
 textarea {
   color: #fff;
@@ -852,16 +847,16 @@ textarea {
   outline: none;
 }
 
-.table-page .tambah-popup form .input-box select option {
+.table-page .form-popup form .input-box select option {
   background-color: var(--box-color);
 }
 
-.table-page .tambah-popup form .btn {
+.table-page .form-popup form .btn {
   display: flex;
   gap: 10px;
 }
 
-.table-page .tambah-popup form .btn button {
+.table-page .form-popup form .btn button {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
@@ -870,15 +865,15 @@ textarea {
   background-color: var(--danger);
   transition: 100ms ease-in-out;
 }
-.table-page .tambah-popup form .btn button:hover {
+.table-page .form-popup form .btn button:hover {
   background-color: #ff7484;
 }
 
-.table-page .tambah-popup form .btn button[type="submit"] {
+.table-page .form-popup form .btn button[type="submit"] {
   background-color: var(--main-color);
   transition: 100ms ease-in-out;
 }
-.table-page .tambah-popup form .btn button[type="submit"]:hover {
+.table-page .form-popup form .btn button[type="submit"]:hover {
   background-color: #5188f7;
 }
 
@@ -938,7 +933,7 @@ textarea {
 .table-page .table table tbody .btn button:hover {
   opacity: 0.9;
 }
-.table-page .table table tbody .btn #update{
+.table-page .table table tbody .btn .update{
   background-color: var(--main-color);
 }
 

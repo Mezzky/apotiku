@@ -44,7 +44,7 @@
         </div>
 
         <div id="overlay" class="overlay">
-            <div id="tambahPopup" class="tambah-popup">
+            <div id="tambahPopup" class="form-popup">
                 <h3>Insert Pelanggan</h3>
                 <form action="">
                     <div class="input-box">
@@ -65,6 +65,28 @@
                     </div>
                 </form>
             </div>
+
+            <div id="updatePopup" class="form-popup">
+                <h3>Update Pelanggan</h3>
+                <form action="">
+                    <div class="input-box">
+                        <label for="namaPelanggan">Nama Pelanggan</label>
+                        <input type="text" name="" id="namaPelanggan">
+                    </div>
+                    <div class="input-box">
+                        <label for="noTelpp">No Telp</label>
+                        <input type="text" name="" id="noTelpp">
+                    </div>
+                    <div class="input-box">
+                        <label for="alammat">Alamat</label>
+                        <input type="text" name="" id="alammat">
+                    </div>
+                    <div class="btn">
+                        <button id="closeUpdate" type="reset">Cancel</button>
+                        <button id="closeUpdate" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="table">
@@ -82,7 +104,7 @@
                     <td>JL. Pulau Bungin</td>
                     <td class="btn">
                         <button id="del">Hapus</button>
-                        <button id="update">Update</button>
+                        <button class="update">Update</button>
                     </td>
                 </tbody>
             </table>

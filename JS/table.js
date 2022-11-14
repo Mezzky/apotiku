@@ -1,5 +1,3 @@
-// VARIABLES
-
 // SIDEBAR
 const navShow = document.querySelector('header')
 const navToggle = document.querySelector('header nav h1')
@@ -7,38 +5,6 @@ const navToggle = document.querySelector('header nav h1')
 navToggle.addEventListener('click', () => {
     navShow.classList.toggle('slide')
 })
-
-// Detail Popup
-const detailBtn = document.querySelectorAll('.table-page .table .data #popupBtn')
-const detailPopup = document.querySelectorAll('.table-page .table .data #popupDetail')
-
-detailBtn.forEach(el => {
-    el.addEventListener('click', () => {
-        // detailPopup.forEach(element => {
-        //     element.classList.toggle('pop')
-        // })
-        detailPopup.classList.toggle('pop')
-    })
-})
-
-// for(i = 0; i <= detailBtn.length; i++){
-//     btn = detailBtn[i]
-//     btn.addEventListener('click', () => {
-//         for (a = 0; a <= detailPopup.length; a++){
-//             index = detailPopup[a]
-//             if(btn == index){
-//                 index.classList.toggle('pop')
-//             } else{
-//                 console.log("gagal")
-//             }
-//         }
-//     })
-// }
-
-// for (a = 0; a < detailBtn.length; a++){
-//     console.log(a);
-//     loop[a]
-// }
 
 // Tambah Popup
 const tambahPopup = document.getElementById('tambahPopup')
@@ -57,15 +23,18 @@ tambahClose.addEventListener('click', () => {
 })
 
 // Update Popup
-const updateBtn = document.getElementById('update')
-const updateClose = document.getElementById('close')
+const updateBtn = document.querySelectorAll('.table-page .table .btn .update')
+const updateClose = document.getElementById('closeUpdate')
+const updatePopup = document.getElementById('updatePopup')
 
-updateBtn.addEventListener('click', () => {
-    overlay.classList.add('update')
-    tambahPopup.classList.add('update')
+updateBtn.forEach(el => {
+    el.addEventListener('click', () =>{
+        updatePopup.classList.add('update')
+        overlay.classList.add('update')
+    })
 })
 
 updateClose.addEventListener('click', () => {
     overlay.classList.remove('update')
-    tambahPopup.classList.remove('update')
+    updatePopup.classList.remove('update')
 })

@@ -44,7 +44,7 @@
         </div>
 
         <div id="overlay" class="overlay">
-            <div id="tambahPopup" class="tambah-popup">
+            <div id="tambahPopup" class="form-popup">
                 <h3>Insert Karyawan</h3>
                 <form action="">
                     <div class="input-box">
@@ -73,10 +73,40 @@
                     </div>
                 </form>
             </div>
+            
+            <div id="updatePopup" class="form-popup">
+                <h3>Update Karyawan</h3>
+                <form action="">
+                    <div class="input-box">
+                        <label for="idKaryawan">ID Karyawan</label>
+                        <select name="" id="idKaryawan">
+                            <option value="xianjing">PT. Xianjing</option>
+                            <option value="shelby">PT. Shelby</option>
+                            <option value="sumaradu">PT. Sumaradu</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="namaKaryawan">Nama Karyawan</label>
+                        <input type="text" name="" id="namaKaryawan">
+                    </div>
+                    <div class="input-box">
+                        <label for="alamat">Alamat</label>
+                        <input type="text" name="" id="alamat">
+                    </div>
+                    <div class="input-box">
+                        <label for="noTelp">No Telepon</label>
+                        <input type="text" name="" id="noTelp">
+                    </div>
+                    <div class="btn">
+                        <button id="closeUpdate" type="reset">Cancel</button>
+                        <button id="closeUpdate" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="table">
-            <h2>Daftar Obat</h2>
+            <h2>Daftar Karyawan</h2>
             <table>
                 <thead>
                     <td>Nama Karyawan</td>
@@ -90,7 +120,7 @@
                     <td>087674829346</td>
                     <td class="btn">
                         <button id="del">Hapus</button>
-                        <button id="update">Update</button>
+                        <button class="update">Update</button>
                     </td>
                 </tbody>
             </table>
