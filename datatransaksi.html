@@ -23,6 +23,7 @@
         <li><a href="datapelanggan.html"><i class="fa-solid fa-hospital-user"></i> <span>Table Pelanggan</span> </a></li>
         <li><a href="datatransaksi.html"><i class="fa-solid fa-comment-dollar"></i> <span>Table Transaksi</span> </a></li>
         <li><a href="datakaryawan.html"><i class="fa-solid fa-users"></i> <span>Table Karyawan</span> </a></li>
+        <li><a href="detailtransaksi.html"><i class="fa-solid fa-clipboard"></i> <span>Detail Transaksi</span> </a></li>
         </nav> 
     </header>
     
@@ -38,7 +39,7 @@
             </form>
             <div class="btn">
                 <button id="printBtn"><i class="fa-solid fa-print"></i></button>
-                <button id="tambahBtn">Tambah Data</button>
+                <button id="tambahBtn">Tambah Transaksi</button>
             </div>
         </div>
 
@@ -47,32 +48,28 @@
                 <h3>Insert Transaksi</h3>
                 <form action="">
                     <div class="input-box">
-                        <label for="namaPelanggan">Nama Pelanggan</label>
-                        <input type="text" name="" id="namaPelanggan">
-                    </div>
-                    <div class="input-box">
-                        <label for="namaKaryawan">Nama Karyawan</label>
-                        <input type="text" name="" id="namaKaryawan">
+                        <label for="idTransaksi">ID Transaksi</label>
+                        <select name="" id="idTransaksi">
+                            <option value="xianjing">PT. Xianjing</option>
+                            <option value="shelby">PT. Shelby</option>
+                            <option value="sumaradu">PT. Sumaradu</option>
+                        </select>
                     </div>
                     <div class="input-box">
                         <label for="tanggal">Tanggal</label>
                         <input type="text" name="" id="tanggal">
                     </div>
                     <div class="input-box">
+                        <label for="idPelanggan">ID Pelanggan</label>
+                        <select name="" id="idPelanggan">
+                            <option value="xianjing">Joko</option>
+                            <option value="shelby">Bejo</option>
+                            <option value="sumaradu">Gordo</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
                         <label for="kategori">Kategori</label>
                         <input type="text" name="" id="kategori">
-                    </div>
-                    <div class="input-box">
-                        <label for="totalBayar">Total Bayar</label>
-                        <input type="text" name="" id="totalBayar">
-                    </div>
-                    <div class="input-box">
-                        <label for="bayar">Bayar</label>
-                        <input type="text" name="" id="bayar">
-                    </div>
-                    <div class="input-box">
-                        <label for="kembalian">Kembalian</label>
-                        <input type="text" name="" id="kembalian">
                     </div>
                     <div class="btn">
                         <button id="close" type="reset">Cancel</button>

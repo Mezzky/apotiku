@@ -23,6 +23,7 @@
         <li><a href="datapelanggan.html"><i class="fa-solid fa-hospital-user"></i> <span>Table Pelanggan</span> </a></li>
         <li><a href="datatransaksi.html"><i class="fa-solid fa-comment-dollar"></i> <span>Table Transaksi</span> </a></li>
         <li><a href="datakaryawan.html"><i class="fa-solid fa-users"></i> <span>Table Karyawan</span> </a></li>
+        <li><a href="detailtransaksi.html"><i class="fa-solid fa-clipboard"></i> <span>Detail Transaksi</span> </a></li>
         </nav> 
     </header>
     
@@ -33,7 +34,7 @@
     
         <div class="header">
             <form action="" class="search-box">
-                <input type="text" name="" id="" placeholder="Cari Obat...">
+                <input type="text" name="" id="" placeholder="Cari Karyawan...">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div class="btn">
@@ -44,35 +45,27 @@
 
         <div id="overlay" class="overlay">
             <div id="tambahPopup" class="tambah-popup">
-                <h3>Insert Obat</h3>
+                <h3>Insert Karyawan</h3>
                 <form action="">
                     <div class="input-box">
-                        <label for="idSupplier">ID Supplier</label>
-                        <select name="" id="idSupplier">
+                        <label for="idKaryawan">ID Karyawan</label>
+                        <select name="" id="idKaryawan">
                             <option value="xianjing">PT. Xianjing</option>
                             <option value="shelby">PT. Shelby</option>
                             <option value="sumaradu">PT. Sumaradu</option>
                         </select>
                     </div>
                     <div class="input-box">
-                        <label for="namaObat">Nama Obat</label>
-                        <input type="text" name="" id="namaObat">
+                        <label for="namaKaryawan">Nama Karyawan</label>
+                        <input type="text" name="" id="namaKaryawan">
                     </div>
                     <div class="input-box">
-                        <label for="hargaJual">Harga Jual</label>
-                        <input type="text" name="" id="hargaJual">
+                        <label for="alamat">Alamat</label>
+                        <input type="text" name="" id="alamat">
                     </div>
                     <div class="input-box">
-                        <label for="hargaBeli">Harga Beli</label>
-                        <input type="text" name="" id="hargaBeli">
-                    </div>
-                    <div class="input-box">
-                        <label for="stokObat">Stok Obat</label>
-                        <input type="text" name="" id="stokObat">
-                    </div>
-                    <div class="input-box">
-                        <label for="ketObat">Keterangan Obat</label>
-                        <textarea name="" id="ketObat" rows=""></textarea>
+                        <label for="noTelp">No Telepon</label>
+                        <input type="text" name="" id="noTelp">
                     </div>
                     <div class="btn">
                         <button id="close" type="reset">Cancel</button>
@@ -87,20 +80,14 @@
             <table>
                 <thead>
                     <td>Nama Karyawan</td>
-                    <td>Harga Beli</td>
-                    <td>Harga Jual</td>
-                    <td>Keterangan</td>
-                    <td>Supplier</td>
-                    <td>Stok</td>
+                    <td>Alamat</td>
+                    <td>No Telepon</td>
                     <td>Aksi</td>
                 </thead>
                 <tbody>
                     <td>Slebew</td>
-                    <td>Rp24000</td>
-                    <td>Rp14000</td>
-                    <td>Untuk Bundir</td>
-                    <td>PT. Suramadu</td>
-                    <td>100</td>
+                    <td>Jl. Jadab Sudirman</td>
+                    <td>087674829346</td>
                     <td class="btn">
                         <button id="del">Hapus</button>
                         <button id="update">Update</button>
