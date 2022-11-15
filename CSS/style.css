@@ -286,10 +286,11 @@ header.slide {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(.8);
 }
 
 .register-page .input-container {
-  padding: 60px 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -921,7 +922,7 @@ textarea {
 .table-page .table table thead td,
 .table-page .table table tbody td {
   color: var(--light-text);
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .table-page .table table thead td {
@@ -930,6 +931,11 @@ textarea {
 
 .table-page .table table tbody td {
   color: var(--text-dimmed);
+}
+
+.table-page .table table tbody td img{
+  height: 60px;
+  width: 90px;
 }
 
 .table-page .table table tbody td:first-child {
