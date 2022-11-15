@@ -544,20 +544,36 @@ h2 {
 }
 
 .dashboard-page .dash-content .dash-data .all-data .total-data {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
 .dashboard-page .dash-content .dash-data .all-data .total-data .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+  padding: 20px;
   background-color: var(--second-color);
-  /* width: 260px; */
   height: 140px;
   border: 2px solid var(--text-dimmed);
   border-radius: 12px;
+}
+
+.dashboard-page .dash-content .dash-data .all-data .total-data .data i{
+  color: var(--light-text);
+  font-size: 35px;
+}
+
+.dashboard-page .dash-content .dash-data .all-data .total-data .data p{
+  color: var(--light-text);
+  font-size: 16px;
+}
+
+.dashboard-page .dash-content .dash-data .all-data .total-data .data p > span{
+  font-size: 14px;
 }
 
 .dashboard-page .dash-content .dash-data .all-data .histori-tittle {
@@ -764,6 +780,7 @@ h2 {
 }
 
 .table-page .overlay {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -802,6 +819,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transform: scale(.8);
   transition: 300ms ease;
 }
 .table-page .form-popup.tambah {
@@ -869,11 +887,11 @@ textarea {
   background-color: #ff7484;
 }
 
-.table-page .form-popup form .btn button[type="submit"] {
+.table-page .form-popup form .btn .submit-btn {
   background-color: var(--main-color);
   transition: 100ms ease-in-out;
 }
-.table-page .form-popup form .btn button[type="submit"]:hover {
+.table-page .form-popup form .btn .submit-btn:hover {
   background-color: #5188f7;
 }
 
