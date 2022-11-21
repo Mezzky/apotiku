@@ -1104,7 +1104,7 @@ input {
   gap: 10px;
 }
 
-.content-detail .form-data .btn button {
+.content-detail .form-data .btn input[type=submit] {
   cursor: pointer;
   padding: 5px 15px;
   border-radius: 5px;
@@ -1113,15 +1113,15 @@ input {
   background-color: #3f3f3f;
   transition: 100ms ease-in-out;
 }
-.content-detail .form-data .btn button:hover {
+.content-detail .form-data .btn input[type=submit]:hover {
   background-color: #525252;
 }
 
-.content-detail .form-data .btn .next-btn {
+.content-detail .form-data .btn input[type=submit]:last-child {
   background-color: var(--main-color);
   transition: 100ms ease-in-out;
 }
-.content-detail .form-data .btn .next-btn:hover {
+.content-detail .form-data .btn input[type=submit]:last-child:hover {
   background-color: #5188f7;
 }
 
