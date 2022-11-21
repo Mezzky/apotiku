@@ -121,6 +121,7 @@ header.slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--box-color);
 }
 
 .wrapper .pop-msg {
@@ -212,6 +213,7 @@ header.slide {
   border-radius: 8px;
   border: 2px solid var(--text-dimmed);
   padding: 5px 5px;
+  align-items: center;
 }
 
 .login-page .input-container form .input-box .content i {
@@ -286,7 +288,7 @@ header.slide {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .register-page .input-container {
@@ -825,7 +827,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transform: scale(0.8);
+  transform: scale(0.9);
   transition: 300ms ease;
 }
 .table-page .form-popup.tambah {
