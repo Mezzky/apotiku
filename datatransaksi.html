@@ -48,28 +48,25 @@
                 <h3>Insert Transaksi</h3>
                 <form action="">
                     <div class="input-box">
-                        <label for="idTransaksi">ID Transaksi</label>
-                        <select name="" id="idTransaksi">
-                            <option value="xianjing">PT. Xianjing</option>
-                            <option value="shelby">PT. Shelby</option>
-                            <option value="sumaradu">PT. Sumaradu</option>
+                        <label for="kategoriPel">Kategori Pelanggan</label>
+                        <select name="kategori" id="kategoriPel">
+                            <option value="umum">Umum</option>
+                            <option value="member">Memsber</option>
                         </select>
                     </div>
-                    <div class="input-box">
-                        <label for="tanggal">Tanggal</label>
-                        <input type="text" name="" id="tanggal">
+                    <div class="btn">
+                        <button id="close" type="reset">Cancel</button>
+                        <button class="submit-btn" id="close" type="submit">Submit</button>
                     </div>
+                </form>
+            </div>
+
+            <div id="tambahPopup" class="form-popup">
+                <h3>Insert Transaksi</h3>
+                <form action="">
                     <div class="input-box">
-                        <label for="idPelanggan">ID Pelanggan</label>
-                        <select name="" id="idPelanggan">
-                            <option value="xianjing">Joko</option>
-                            <option value="shelby">Bejo</option>
-                            <option value="sumaradu">Gordo</option>
-                        </select>
-                    </div>
-                    <div class="input-box">
-                        <label for="kategori">Kategori</label>
-                        <input type="text" name="" id="kategori">
+                        <label for="namaPelanggan">Nama Pelanggan</label>
+                        <input type="text" name="namaPel" id="namaPelanggan">
                     </div>
                     <div class="btn">
                         <button id="close" type="reset">Cancel</button>

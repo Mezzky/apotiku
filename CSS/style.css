@@ -286,7 +286,7 @@ header.slide {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 
 .register-page .input-container {
@@ -471,7 +471,7 @@ header.slide {
   transform: translateY(0px);
 }
 
-.dashboard-page .dash-tittle .profile-popup.user{
+.dashboard-page .dash-tittle .profile-popup.user {
   bottom: -180px;
 }
 
@@ -567,17 +567,17 @@ h2 {
   border-radius: 12px;
 }
 
-.dashboard-page .dash-content .dash-data .all-data .total-data .data i{
+.dashboard-page .dash-content .dash-data .all-data .total-data .data i {
   color: var(--light-text);
   font-size: 35px;
 }
 
-.dashboard-page .dash-content .dash-data .all-data .total-data .data p{
+.dashboard-page .dash-content .dash-data .all-data .total-data .data p {
   color: var(--light-text);
   font-size: 16px;
 }
 
-.dashboard-page .dash-content .dash-data .all-data .total-data .data p > span{
+.dashboard-page .dash-content .dash-data .all-data .total-data .data p > span {
   font-size: 14px;
 }
 
@@ -824,7 +824,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transform: scale(.8);
+  transform: scale(0.8);
   transition: 300ms ease;
 }
 .table-page .form-popup.tambah {
@@ -849,7 +849,7 @@ h2 {
   gap: 14px;
 }
 
-.table-page .form-popup form input{
+.table-page .form-popup form input {
   color: var(--light-text);
 }
 
@@ -941,7 +941,7 @@ textarea {
   color: var(--text-dimmed);
 }
 
-.table-page .table table tbody td img{
+.table-page .table table tbody td img {
   height: 60px;
   width: 90px;
 }
@@ -964,12 +964,12 @@ textarea {
 .table-page .table table tbody .btn button:hover {
   opacity: 0.9;
 }
-.table-page .table table tbody .btn .update{
+.table-page .table table tbody .btn .update {
   background-color: var(--main-color);
 }
 
 /* Detail Transaksi Page */
-.back-btn{
+.back-btn {
   position: fixed;
   top: 0;
   left: 0;
@@ -980,29 +980,29 @@ textarea {
   border-bottom-right-radius: 50%;
 }
 
-.tittle-detail{
+.tittle-detail {
   color: var(--light-text);
   text-align: center;
   margin: 20px 0;
   font-size: 24px;
 }
 
-.content-detail{
+.content-detail {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 0 200px;
 }
 
-.content-detail .data-nota{
+.content-detail .data-nota {
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--box-color);
 }
 
-.content-detail .data-nota p{
+.content-detail .data-nota p {
   padding: 10px;
   border: 1px solid var(--box-color);
   background-color: #cac9c9;
@@ -1010,37 +1010,37 @@ textarea {
   font-weight: 500;
 }
 
-.content-detail .data-nota .head{
+.content-detail .data-nota .head {
   background-color: var(--main-color);
 }
 
-.content-detail .data-transaksi{
+.content-detail .data-transaksi {
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid var(--box-color);
 }
 
-.content-detail .data-transaksi thead{
+.content-detail .data-transaksi thead {
   background-color: var(--main-color);
 }
 
-.content-detail .data-transaksi tbody{
+.content-detail .data-transaksi tbody {
   background-color: #cac9c9;
 }
 
-.content-detail .data-transaksi td{
+.content-detail .data-transaksi td {
   padding: 10px;
   font-size: 12px;
   font-weight: 500;
 }
 
-.content-detail .btn{
+.content-detail > .btn {
   align-self: center;
   display: flex;
   gap: 20px;
 }
 
-.content-detail .btn button{
+.content-detail > .btn button {
   cursor: pointer;
   border: none;
   padding: 5px 20px;
@@ -1049,11 +1049,73 @@ textarea {
   background-color: #3f3f3f;
   transition: 100ms all;
 }
-.content-detail .btn #lihatTrans{
+.content-detail > .btn #lihatTrans {
   background-color: var(--main-color);
 }
-.content-detail .btn button:hover{
-  opacity: .8;
+.content-detail > .btn button:hover {
+  opacity: 0.8;
+}
+
+.content-detail .form-data {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  border: 1px solid var(--text-dimmed);
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.content-detail .form-data .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content-detail .form-data .input-box label {
+  color: var(--light-text);
+}
+
+.content-detail .form-data .input-box select,
+input {
+  color: #fff;
+  background: transparent;
+  border: 1px solid var(--text-dimmed);
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.content-detail .form-data .input-box select option {
+  background-color: var(--box-color);
+}
+
+.content-detail .form-data .btn {
+  align-self: center;
+  display: flex;
+  gap: 10px;
+}
+
+.content-detail .form-data .btn button {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #3f3f3f;
+  transition: 100ms ease-in-out;
+}
+.content-detail .form-data .btn button:hover {
+  background-color: #525252;
+}
+
+.content-detail .form-data .btn .next-btn {
+  background-color: var(--main-color);
+  transition: 100ms ease-in-out;
+}
+.content-detail .form-data .btn .next-btn:hover {
+  background-color: #5188f7;
 }
 
 /*========= RESPONSIVE =========*/
@@ -1122,24 +1184,24 @@ textarea {
 }
 
 /*========= PRINT =========*/
-@media print{
-  header{
+@media print {
+  header {
     display: none;
   }
 
-  .table-page{
+  .table-page {
     padding: 0;
   }
 
-  .table-page .header{
+  .table-page .header {
     display: none;
   }
 
-  .table-page .table{
-    transform: scale(.9);
+  .table-page .table {
+    transform: scale(0.9);
   }
 
-  .table-page .table table{
+  .table-page .table table {
     width: 100%;
   }
 
@@ -1155,7 +1217,7 @@ textarea {
     font-weight: normal;
   }
 
-  .table-page .table table tbody .btn button{
+  .table-page .table table tbody .btn button {
     color: var(--text-dimmed);
   }
 }
