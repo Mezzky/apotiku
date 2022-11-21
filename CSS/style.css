@@ -516,6 +516,7 @@ h2 {
 .dashboard-page .dash-tittle .profile img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
 }
 
 .dashboard-page .dash-tittle .profile a {
@@ -1067,6 +1068,12 @@ textarea {
   gap: 10px;
 }
 
+.content-detail .form-data img {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+}
+
 .content-detail .form-data .input-box {
   display: flex;
   flex-direction: column;
@@ -1203,6 +1210,7 @@ input {
 
   .table-page .table table {
     width: 100%;
+    border-radius: 0;
   }
 
   .table-page .table table thead td,

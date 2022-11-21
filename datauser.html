@@ -13,85 +13,24 @@
   </head>
   <body>
     <a class="back-btn" href="dashboard.html"><i class="fa-solid fa-arrow-left"></i></a>
-    <h1 class="tittle-detail">Detail Transaksi</h1>
+    <h1 class="tittle-detail">Pengaturan Profile</h1>
 
     <main class="content-detail">
-      <div class="data-nota">
-        <p class="head">Kategori Pelanggan</p>
-        <p>Lansia</p>
-        <p class="head">Pelanggan</p>
-        <p>Suryadana</p>
-        <p class="head">Tanggal Transaksi</p>
-        <p>19-01-2022</p>
-      </div>
-
-      <table class="data-transaksi">
-        <thead>
-          <td>Nama Obat</td>
-          <td>Jumlah</td>
-          <td>Harga Satuan</td>
-          <td>Total Harga</td>
-        </thead>
-        <tbody>
-          <td>Sinovac</td>
-          <td>2</td>
-          <td>420.000</td>
-          <td>840.000</td>
-        </tbody>
-        <tr>
-          <td>Paracetamol</td>
-          <td>1</td>
-          <td>20.000</td>
-          <td>20.000</td>
-        </tr>
-        <tr>
-          <td colspan="3">Total Transaksi</td>
-          <td>860.000</td>
-        </tr>
-      </table>
-
       <form class="form-data" action="">
+        <img src="assets/img/profile-pict.png" alt="jiancok" />
         <div class="input-box">
-          <label for="pilihObat">Pilih Obat</label>
-          <select name="pilObat" id="pilihObat">
-            <option value="obat">Obat Tidur</option>
-            <option value="obat">Obat Bangun</option>
-          </select>
+          <label for="pilihProf">Pilih Profile</label>
+          <input type="file" name="pilProf" id="pilihProf" />
         </div>
         <div class="input-box">
-          <label for="jumlahObat">Jumlah</label>
-          <input type="number" name="jumObat" id="jumlahObat" placeholder="Masukkan Jumlah" />
+          <label for="namaUser">Nama User</label>
+          <input type="number" name="namUser" id="namaUser" placeholder="Masukkan Jumlah" />
         </div>
         <div class="btn">
-          <button type="submit">Masukkan Obat</button>
-          <button class="next-btn" type="submit">Selanjutnya</button>
+          <button type="reset">Batal</button>
+          <button class="next-btn" type="submit">Simpan</button>
         </div>
       </form>
-
-      <form class="form-data" action="">
-        <div class="input-box">
-          <label for="jumlahBayar">Jumlah Bayar</label>
-          <input type="number" name="jumBayar" id="jumlahBayar" placeholder="Masukkan Jumlah" />
-        </div>
-        <div class="btn">
-          <button type="submit">Masukkan Obat</button>
-          <button class="next-btn" type="submit">Selanjutnya</button>
-        </div>
-      </form>
-
-      <div class="data-nota">
-        <p class="head">Bayar</p>
-        <p>900.000</p>
-        <p class="head">Total Bayar</p>
-        <p>860.000</p>
-        <p class="head">Kembali</p>
-        <p>40.000</p>
-      </div>
-
-      <div class="btn">
-        <button id="transBaru">Masukkan Transaksi Baru</button>
-        <button id="lihatTrans">Lihat Semua Transaksi</button>
-      </div>
     </main>
 
     <script src="JS/detail.js"></script>
