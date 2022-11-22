@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apotiku</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Link Fontawesome -->
+    <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
+    <!-- Link Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <h1 class="logo">
+          <a href="#"><i class="uil uil-apps"></i></a>
+        </h1>
+        <li>
+          <a href="dashkaryawan.html"><i class="fa-solid fa-home"></i> <span>Home</span> </a>
+        </li>
+        <li>
+          <a href="datapelanggan.html"><i class="fa-solid fa-hospital-user"></i> <span>Table Pelanggan</span> </a>
+        </li>
+        <li>
+          <a href="datatransaksi.html"><i class="fa-solid fa-comment-dollar"></i> <span>Table Transaksi</span> </a>
+        </li>
+        <li>
+          <a href="detailtransaksi.html"><i class="fa-solid fa-clipboard"></i> <span>Detail Transaksi</span> </a>
+        </li>
+      </nav>
+    </header>
+
+    <!-- DASHBOARD PAGE -->
+    <main class="dashboard-page">
+      <div class="shape one"></div>
+      <div class="shape two"></div>
+      <div class="dash-tittle">
+        <div class="tittle">
+          <h1>Hai <span class="active">Jiancok01!</span></h1>
+          <h2>Selamat Datang di Dashboard <span>👋</span></h2>
+        </div>
+        <div class="profile">
+          <img src="Assets/img/profile-pict.png" alt="Profile" />
+          <a id="profileBtn">Jiancok01 <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+
+        <div id="profilePopup" class="profile-popup user">
+          <a href="datauser.html"><i class="fa-solid fa-gear"></i> Pengaturan</a>
+          <span></span>
+          <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </div>
+      </div>
+
+      <section class="dash-content">
+        <h3>Total Data</h3>
+        <section class="dash-data">
+          <section class="all-data">
+            <div class="total-data --karyawan">
+              <div class="data">
+                <i class="fa-solid fa-user"></i>
+                <p>Banyak Pelanggan : <span>100</span></p>
+              </div>
+              <div class="data">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Banyak Transaksi : <span>100</span></p>
+              </div>
+            </div>
+            <div class="histori-tittle">
+              <h3>Histori Transaksi</h3>
+              <a href="datatransaksi.html">Lebih Banyak</a>
+            </div>
+            <table class="--tbdash">
+              <thead>
+                <td>Nama Pelanggan</td>
+                <td>Tanggal</td>
+                <td>Kategori</td>
+                <td>Total Bayar</td>
+                <td>Aksi</td>
+              </thead>
+              <tbody>
+                <td>Bukan Member</td>
+                <td>14-09-2022</td>
+                <td>Member</td>
+                <td>5.000.000</td>
+                <td class="btn">
+                  <a href="datatransaksi.html" class="update">Detail</a>
+                </td>
+              </tbody>
+              <tbody>
+                <td>Bukan Member</td>
+                <td>14-09-2022</td>
+                <td>Member</td>
+                <td>5.000.000</td>
+                <td class="btn">
+                  <a href="datatransaksi.html" class="update">Detail</a>
+                </td>
+              </tbody>
+              <tbody>
+                <td>Bukan Member</td>
+                <td>14-09-2022</td>
+                <td>Member</td>
+                <td>5.000.000</td>
+                <td class="btn">
+                  <a href="datatransaksi.html" class="update">Detail</a>
+                </td>
+              </tbody>
+              <tbody>
+                <td>Bukan Member</td>
+                <td>14-09-2022</td>
+                <td>Member</td>
+                <td>5.000.000</td>
+                <td class="btn">
+                  <a href="datatransaksi.html" class="update">Detail</a>
+                </td>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="data-karyawan">
+            <h3>Data Pelanggan</h3>
+            <div class="karyawan">
+              <div class="name">
+                <p>Jembot Merah</p>
+                <p>Jl. Jalan Di Kota</p>
+              </div>
+            </div>
+            <div class="karyawan">
+              <div class="name">
+                <p>Si Ancok</p>
+                <p>Jl. Diponegoro</p>
+              </div>
+            </div>
+            <div class="btn">
+              <img src="Assets/img/img-karyawan.svg" />
+              <a href="datakaryawan.html">Lihat Semua</a>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>

@@ -557,11 +557,14 @@ h2 {
   gap: 15px;
 }
 
+.dashboard-page .dash-content .dash-data .all-data .total-data.--karyawan {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .dashboard-page .dash-content .dash-data .all-data .total-data .data {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   gap: 20px;
   padding: 20px;
   background-color: var(--second-color);
@@ -604,6 +607,67 @@ h2 {
   gap: 20px;
 }
 
+/* TB Histori Transaksi */
+.--tbdash {
+  border-radius: 10px;
+  border: 1px solid var(--text-dimmed);
+  overflow: hidden;
+  border-spacing: 0;
+}
+
+.--tbdash thead,
+.--tbdash tbody {
+  padding: 20px;
+  background-color: var(--box-color);
+}
+
+.--tbdash tbody {
+  background-color: var(--second-color);
+}
+
+.--tbdash thead td,
+.--tbdash tbody td {
+  padding: 10px 20px;
+}
+
+.--tbdash thead td {
+  font-weight: 500;
+  color: var(--light-text);
+}
+
+.--tbdash tbody td {
+  color: var(--text-dimmed);
+}
+
+.--tbdash tbody td img {
+  height: 60px;
+  width: 90px;
+}
+
+.--tbdash tbody td:first-child {
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.--tbdash tbody .btn a {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 15px;
+  color: var(--light-text);
+  border: none;
+  background-color: var(--danger);
+  border-radius: 5px;
+  transition: 100ms ease-in-out;
+  /* font-weight: 500; */
+}
+.--tbdash tbody .btn a:hover {
+  opacity: 0.9;
+}
+.--tbdash tbody .btn .update {
+  background-color: var(--main-color);
+}
+
+/* 
 .dashboard-page .dash-content .dash-data .all-data .histori-data .data,
 .table-page .table .data {
   display: flex;
@@ -648,7 +712,7 @@ h2 {
 .dashboard-page .dash-content .dash-data .all-data .histori-data .data button:hover,
 .table-page .table .data .btnTrans:hover {
   background-color: #5188f7;
-}
+} */
 
 .dashboard-page .dash-content .dash-data .data-karyawan {
   padding: 20px 30px;
@@ -1106,7 +1170,7 @@ input {
   gap: 10px;
 }
 
-.content-detail .form-data .btn input[type=submit] {
+.content-detail .form-data .btn input[type="submit"] {
   cursor: pointer;
   padding: 5px 15px;
   border-radius: 5px;
@@ -1115,15 +1179,15 @@ input {
   background-color: #3f3f3f;
   transition: 100ms ease-in-out;
 }
-.content-detail .form-data .btn input[type=submit]:hover {
+.content-detail .form-data .btn input[type="submit"]:hover {
   background-color: #525252;
 }
 
-.content-detail .form-data .btn input[type=submit]:last-child {
+.content-detail .form-data .btn input[type="submit"]:last-child {
   background-color: var(--main-color);
   transition: 100ms ease-in-out;
 }
-.content-detail .form-data .btn input[type=submit]:last-child:hover {
+.content-detail .form-data .btn input[type="submit"]:last-child:hover {
   background-color: #5188f7;
 }
 
@@ -1213,6 +1277,11 @@ input {
   .table-page .table table {
     width: 100%;
     border-radius: 0;
+  }
+
+  .table-page .table table thead td {
+    font-size: 900;
+    background-color: #1d1f26;
   }
 
   .table-page .table table thead td,
